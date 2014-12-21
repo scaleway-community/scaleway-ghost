@@ -1,5 +1,7 @@
 ## -*- docker-image-name: "armbuild/ocs-app-ghost:utopic" -*-
 FROM armbuild/ocs-distrib-ubuntu:utopic
+MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter

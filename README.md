@@ -13,13 +13,13 @@ We use the Docker's building system and convert it at the end to a disk image th
 
 [More info](https://github.com/online-labs/image-tools#docker-based-builder)
 
-Commands
---------
+---
 
-    # build the image in a rootfs directory
-    $ make rootfs
-    
-    # write the image to /dev/nbd1
-    $ make install_on_disk
-    
-Full list of commands available at: https://github.com/online-labs/image-tools/tree/master#commands
+Install
+-------
+
+Build and write the image to /dev/nbd1 (see [documentation](https://doc.cloud.online.net/howto/create_image.html))
+
+    $ make install
+
+Full list of commands available at: [online-labs/image-tools](https://github.com/online-labs/image-tools/tree/master#commands)

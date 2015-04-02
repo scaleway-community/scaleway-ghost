@@ -1,8 +1,8 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			ocs-app-ghost
-VERSION =		utopic
-VERSION_ALIASES =	14.10 latest
-TITLE =			Ghost 0.5.3
+VERSION =		latest
+VERSION_ALIASES =	14.10 utopic
+TITLE =			Ghost
 DESCRIPTION =		Ghost blogging platform
 SOURCE_URL =		https://github.com/online-labs/image-app-ghost
 

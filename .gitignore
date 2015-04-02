@@ -8,3 +8,5 @@ sd*.raw*
 rootfs*
 */*.tar
 */*.built
+/*.mk
+*.built

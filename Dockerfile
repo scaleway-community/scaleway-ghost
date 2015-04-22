@@ -22,7 +22,7 @@ RUN curl -sL https://deb.nodesource.com/setup | sudo bash - && \
     apt-get clean
 
 # Install ghost
-RUN wget -qO ghost.zip https://ghost.org/zip/ghost-0.5.3.zip && \
+RUN wget -qO ghost.zip https://ghost.org/zip/ghost-0.6.0.zip && \
     rm -rf /var/www && \
     unzip ghost.zip -d /var/www/ && \
     rm -f ghost.zip && \

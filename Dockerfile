@@ -25,7 +25,8 @@ RUN curl -sL https://deb.nodesource.com/setup | sudo bash - && \
 
 
 # Install ghost
-RUN wget -qO ghost.zip https://ghost.org/zip/ghost-0.6.0.zip && \
+ENV GHOST_VERSION 0.6.4
+RUN wget -qO ghost.zip https://ghost.org/zip/ghost-${GHOST_VERSION}.zip && \
     rm -rf /var/www && \
     unzip ghost.zip -d /var/www/ && \
     rm -f ghost.zip && \

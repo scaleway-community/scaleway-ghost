@@ -1,6 +1,7 @@
 ## -*- docker-image-name: "armbuild/scw-app-ghost:utopic" -*-
-FROM armbuild/scw-distrib-ubuntu:utopic
+FROM armbuild/scw-distrib-ubuntu:trusty
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
+
 
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter

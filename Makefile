@@ -1,7 +1,7 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			scw-app-ghost
 VERSION =		latest
-VERSION_ALIASES =	14.10 utopic
+VERSION_ALIASES =
 TITLE =			Ghost
 DESCRIPTION =		Ghost blogging platform
 SOURCE_URL =		https://github.com/scaleway/image-app-ghost

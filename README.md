@@ -1,6 +1,6 @@
 # Ghost image on Scaleway
 
-[![Travis](https://img.shields.io/travis/scaleway/image-app-ghost.svg)](https://travis-ci.org/scaleway/image-app-ghost)
+[![Travis](https://img.shields.io/travis/scaleway-community/scaleway-ghost.svg)](https://travis-ci.org/scaleway-community/scaleway-ghost)
 [![Scaleway ImageHub](https://img.shields.io/badge/ImageHub-view-ff69b4.svg)](https://hub.scaleway.com/ghost.html)
 [![Run on Scaleway](https://img.shields.io/badge/Scaleway-run-69b4ff.svg)](https://cloud.scaleway.com/#/servers/new?image=4e40013e-8364-4e25-ad10-6e6c90279671)
 

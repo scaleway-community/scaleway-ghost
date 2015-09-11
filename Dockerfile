@@ -1,5 +1,5 @@
-## -*- docker-image-name: "armbuild/scw-app-ghost:utopic" -*-
-FROM armbuild/scw-distrib-ubuntu:trusty
+## -*- docker-image-name: "scaleway/ghost:utopic" -*-
+FROM scaleway/ubuntu:trusty
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 

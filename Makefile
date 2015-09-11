@@ -1,5 +1,4 @@
-DOCKER_NAMESPACE =	armbuild/
-NAME =			scw-app-ghost
+NAME =			ghost
 VERSION =		latest
 VERSION_ALIASES =	0.6.4 0.6 0
 TITLE =			Ghost

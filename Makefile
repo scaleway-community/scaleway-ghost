@@ -1,6 +1,6 @@
 NAME =			ghost
 VERSION =		latest
-VERSION_ALIASES =	0.7.0
+VERSION_ALIASES =	0.7.1
 TITLE =			Ghost
 DESCRIPTION =		Ghost blogging platform
 SOURCE_URL =		https://github.com/scaleway-community/scaleway-ghost

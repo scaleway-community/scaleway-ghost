@@ -8,7 +8,7 @@ VENDOR_URL =		https://ghost.org/
 
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	stable
-IMAGE_NAME =		Ghost 0.7
+IMAGE_NAME =		Ghost 0.7.4
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)

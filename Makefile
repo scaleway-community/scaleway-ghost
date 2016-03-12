@@ -5,6 +5,7 @@ TITLE =			Ghost
 DESCRIPTION =		Ghost blogging platform
 SOURCE_URL =		https://github.com/scaleway-community/scaleway-ghost
 VENDOR_URL =		https://ghost.org/
+IMAGE_DEFAULT_ARCH =	x86_64
 
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	stable

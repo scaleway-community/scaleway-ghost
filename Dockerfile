@@ -1,10 +1,18 @@
-## -*- docker-image-name: "scaleway/ghost:utopic" -*-
-FROM scaleway/ubuntu:trusty
+## -*- docker-image-name: "scaleway/python:latest" -*-
+FROM scaleway/ubuntu:amd64-trusty
+# following 'FROM' lines are used dynamically thanks do the image-builder
+# which dynamically update the Dockerfile if needed.
+#FROM scaleway/ubuntu:armhf-trusty       # arch=armv7l
+#FROM scaleway/ubuntu:arm64-trusty       # arch=arm64
+#FROM scaleway/ubuntu:i386-trusty        # arch=i386
+#FROM scaleway/ubuntu:mips-trusty        # arch=mips
+
+
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
 # Prepare rootfs for image-builder
-RUN /usr/local/sbin/builder-enter
+RUN /usr/local/sbin/scw-builder-enter
 
 
 # Install packages
@@ -25,7 +33,7 @@ RUN curl -sL https://deb.nodesource.com/setup | sudo bash - && \
 
 
 # Install ghost
-ENV GHOST_VERSION 0.7.4
+ENV GHOST_VERSION=0.7.4
 RUN wget -qO ghost.zip https://ghost.org/zip/ghost-${GHOST_VERSION}.zip && \
     rm -rf /var/www && \
     unzip ghost.zip -d /var/www/ && \
@@ -33,8 +41,8 @@ RUN wget -qO ghost.zip https://ghost.org/zip/ghost-${GHOST_VERSION}.zip && \
     cd /var/www && npm install --production
 
 
-# Patches
-ADD ./patches/ /
+# Patch the rootfs
+ADD ./overlay/ /
 
 
 # Add ghost user
@@ -47,4 +55,4 @@ RUN ln -sf /etc/nginx/sites-available/ghost /etc/nginx/sites-enabled/ghost && \
 
 
 # Clean rootfs from image-builder
-RUN /usr/local/sbin/builder-leave
+RUN /usr/local/sbin/scw-builder-leave

@@ -8,7 +8,7 @@ VENDOR_URL =		https://ghost.org/
 DEFAULT_IMAGE_ARCH =	x86_64
 
 IMAGE_VOLUME_SIZE =	50G
-IMAGE_BOOTSCRIPT =	stable
+IMAGE_BOOTSCRIPT = latest
 IMAGE_NAME =		Ghost 0.7.8
 
 

@@ -1,5 +1,5 @@
 ## -*- docker-image-name: "scaleway/python:latest" -*-
-FROM scaleway/ubuntu:amd64-trusty
+FROM scaleway/ubuntu:amd64-xenial
 # following 'FROM' lines are used dynamically thanks do the image-builder
 # which dynamically update the Dockerfile if needed.
 #FROM scaleway/ubuntu:armhf-trusty       # arch=armv7l
